@@ -13,7 +13,6 @@ body {
 nav {
     background-color: whitesmoke;
     height: 75px;
-    margin: 0 auto;
 }
 
 nav a, nav button {
@@ -164,6 +163,26 @@ td {
 
 .right-block h1 {
     font-size: 30px;
+}
+
+
+/****** Make adjustments to Left Block Styling for Plot Pages ******/
+.plot-pages .left-block img {
+    float: none;
+    margin: 10px 25px;
+}
+
+.plot-pages .left-block {
+    width: 900px;
+}
+
+.main {
+    width: 1650px;
+    margin: 0 auto;
+}
+
+.active-plot img {
+    border:2px solid teal;
 }
 
 @media (max-width: 500px) {
