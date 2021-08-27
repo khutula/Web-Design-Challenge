@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/8502dc2626.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Urbanist">
+    <title>Document</title>
+</head>
+<body class="plot-pages">
+    <nav>
+        <a class="home" href="index.html"><i class="fas fa-home"></i>  Latitude</a>
+        <div>
+            <ul>
+                <li>
+                    <a class="main-opts btn" href="data.html"><i class="fas fa-table"></i>  Data</a>
+                </li>
+                <li>
+                    <a class="main-opts btn" href="comparisons.html"><i class="fas fa-columns"></i>  Comparisons</a>
+                </li>
+                <li class="dropdown">
+                    <button class="main-opts dropbtn">
+                        <i class="fas fa-chart-bar"></i>  Plots  <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="temp_plot.html">Max Temperature</a>
+                        <a href="humidity_plot.html">Humidity</a>
+                        <a href="cloudiness_plot.html">Cloudiness</a>
+                        <a href="wind_speed_plot.html">Wind Speed</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="left-block">
+            <h1>Wind Speed</h1>
+            <hr>
+            <img src="Resources/assets/images/Fig4.png" alt="City Latitude vs Wind Speed Scatter Plot">
+            <section>
+                <p>Based on the chart, there isn't an obvious trend between latitude and wind speed. Interestingly, the vast majority of wind speed measurements are below 10 mph across the globe. Very few places fall above 10 mph at the time the data was collected. Another interesting note is that there are eight or more places in the northern hemisphere above 25 mph, while there are none above 25 mph in the southern hemisphere. This could be evidence of a meteorological event taking place in the northern hemisphere at the time, but further research would be needed to confirm. </p>
+            </section>
+        </div>
+        <div class="right-block">
+            <h1>Visualizations</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td><a href="temp_plot.html"><img src="Resources/assets/images/Fig1.png" alt="City Latitude vs Max Temperature Scatter Plot"></a></td>
+                    <td><a href="humidity_plot.html"><img src="Resources/assets/images/Fig2.png" alt="City Latitude vs Humidity Scatter Plot"></a></t>
+                </tr>
+                <tr>
+                    <td><a href="cloudiness_plot.html"><img src="Resources/assets/images/Fig3.png" alt="City Latitude vs Cloudiness Scatter Plot"></a></td>
+                    <td><a class="active-plot" href="wind_speed_plot.html"><img src="Resources/assets/images/Fig4.png" alt="City Latitude vs Wind Speed Scatter Plot"></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
