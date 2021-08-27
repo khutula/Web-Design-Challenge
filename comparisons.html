@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/8502dc2626.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Urbanist">
+    <title>Document</title>
+</head>
+<body class="comparisons">
+    <nav>
+        <a class="home" href="index.html"><i class="fas fa-home"></i>  Latitude</a>
+        <div>
+            <ul>
+                <li>
+                    <a class="main-opts btn" href="data.html"><i class="fas fa-table"></i>  Data</a>
+                </li>
+                <li>
+                    <a class="main-opts btn" href="comparisons.html"><i class="fas fa-columns"></i>  Comparisons</a>
+                </li>
+                <li class="dropdown">
+                    <button class="main-opts dropbtn">
+                        <i class="fas fa-chart-bar"></i>  Plots  <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="temp_plot.html">Max Temperature</a>
+                        <a href="humidity_plot.html">Humidity</a>
+                        <a href="cloudiness_plot.html">Cloudiness</a>
+                        <a href="wind_speed_plot.html">Wind Speed</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="left-block">
+            <h1>Comparison: Latitude vs. X</h1>
+            <hr>
+            <section>
+                <p>Click any plot to get an in-depth analysis.</p>
+            </section>
+            <section class="plot-table">
+                <div class="row1">
+                    <div class="row1col1">
+                        <h2>vs. Max Temperature</h2>
+                        <a href="temp_plot.html"><img src="Resources/assets/images/Fig1.png" alt="City Latitude vs Max Temperature Scatter Plot"></a>
+                    </div>
+                    <div class="row1col2">
+                        <h2>vs. Humidity</h2>
+                        <a href="humidity_plot.html"><img src="Resources/assets/images/Fig2.png" alt="City Latitude vs Humidity Scatter Plot"></a>
+                        <br>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="row2col1">
+                        <h2>vs. Cloudiness</h2>
+                        <a href="cloudiness_plot.html"><img src="Resources/assets/images/Fig3.png" alt="City Latitude vs Cloudiness Scatter Plot"></a>
+                    </div>
+                    <div class="row2col2">
+                        <h2>vs. Wind Speed</h2>
+                        <a href="wind_speed_plot.html"><img src="Resources/assets/images/Fig4.png" alt="City Latitude vs Wind Speed Scatter Plot"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

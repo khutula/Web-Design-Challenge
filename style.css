@@ -186,6 +186,39 @@ td {
     border:2px solid teal;
 }
 
+/****** Make adjustments to Styling for Comparison Page ******/
+
+.comparisons .main {
+    width: 1226px;
+    height: 1100px;
+}
+
+.comparisons .left-block {
+    width: auto;
+    float: none;
+}
+
+.plot-table img {
+    width: 500px;
+}
+
+.plot-table img:hover {
+    border:2px solid purple;
+}
+
+.plot-table h2 {
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+    color: teal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.comparisons .main div {
+    display: inline-table;
+}
+
 @media (max-width: 500px) {
     .right-block, .left-block {
         display: inline;
