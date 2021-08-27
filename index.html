@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/8502dc2626.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Urbanist">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a class="home" href="index.html"><i class="fas fa-home"></i>  Latitude</a>
+        <div>
+            <ul>
+                <li>
+                    <a class="main-opts btn" href="#"><i class="fas fa-table"></i>  Data</a>
+                </li>
+                <li>
+                    <a class="main-opts btn" href="#"><i class="fas fa-columns"></i>  Comparisons</a>
+                </li>
+                <li class="dropdown">
+                    <button class="main-opts dropbtn">
+                        <i class="fas fa-chart-bar"></i>  Plots  <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Action</a>
+                        <a href="#">Action</a>
+                        <a href="#">Action</a>
+                        <a href="#">Action</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="left-block">
+            <h1>Summary: Latitude vs. X</h1>
+            <hr>
+            <img src="Resources/assets/images/Fig1.png" alt="Fig1" width=200px>
+            <section>
+                <p>The purpose of this poroject was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                <br>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            </section>
+        </div>
+        <div class="right-block">
+            <h1>Visualizations</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td><a href="#"><img src="Resources/assets/images/Fig1.png" alt="Fig1"></a></td>
+                    <td><a href="#"><img src="Resources/assets/images/Fig2.png" alt="Fig2"></a></t>
+                </tr>
+                <tr>
+                    <td><a href="#"><img src="Resources/assets/images/Fig3.png" alt="Fig3"></a></td>
+                    <td><a href="#"><img src="Resources/assets/images/Fig4.png" alt="Fig4"></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+body {
+    font-family:"Urbanist", sans-serif;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    height: 75px;
+}
+  
+.home {
+    float: left;
+    display: block;
+    color: white;
+    background-color: teal;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    font-size: 35px;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+  
+.main-opts {
+    display: block;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 14px 14px;
+    font-size: 15px;
+    text-decoration: none;
+    float: right;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-content {
+    position: absolute;
+}
+
+.dropbtn {
+    border: 0;
+    background-color: whitesmoke;
+}
+
+.dropbtn:hover, .main-opts:hover, .home:hover, .dropdown-content a:hover {
+    background-color: purple;
+    color: whitesmoke;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 100px;
+    max-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: rgb(54, 54, 54);
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    background-color: rgb(172, 172, 172);
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+}
+
+.viewer {
+    width: 45%;
+    height: 60%;
+    background-color: whitesmoke;
+    position: relative;
+    left: 7%;
+    top: 50px;
+}
+
+.sidebar {
+    width: 30%;
+    height: 55%;
+    background-color: whitesmoke;
+    position: relative;
+    left: 60%;
+    top: -5em;
+
+}
+
+.sidebar figure {
+    position: relative;
+    display: inline-block;
+    padding: 2rem;
+}
+
+.mainfig {
+    float: left;
+    position: relative;
+    top: -1rem;
+}
+
+.viewer section {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    font-size: 2.3vh;
+    position: relative;
+    top: -1rem;
+}
+
+.viewer h1 {
+    color: teal;
+    font-size: 7vh;
+    position: relative;
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+    left: 1rem;
+    top: 1rem;
+}
+
+hr {
+    border-color: rgb(172, 172, 172);
+    margin: 4rem 1rem;
+    border-top: 0;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        left:10%;
+    }
+
+    .viewer {
+        width: 90%;
+        background-color: whitesmoke;
+        position: relative;
+        left: 5%;
+        top: 20px;
+    }
+}

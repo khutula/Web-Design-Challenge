@@ -1,0 +1,173 @@
+/****** Body Formats ******/
+body {
+    font-family:"Urbanist", sans-serif;
+    background-color: rgb(172, 172, 172);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/****** NavBar Styles ******/
+nav {
+    background-color: whitesmoke;
+    height: 75px;
+    margin: 0 auto;
+}
+
+nav a, nav button {
+    text-decoration: none;
+    color: teal;
+}
+
+nav .home, nav .main-opts, nav button {
+    padding: 10px;
+}
+
+.dropbtn:hover, .main-opts:hover, .home:hover, .dropdown-content a:hover {
+    background-color: purple;
+    color: whitesmoke;
+}
+
+.home {
+    color: whitesmoke;
+    float: left;
+    background-color: teal;
+    font-size: 35px;
+    position: absolute;
+    left: 15px;
+    top: 19px;
+}
+
+nav ul li {
+    display: inline;
+    float: right;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    top: 20px;
+}
+
+nav ul {
+    margin-right: 10px;
+}
+
+.btn {
+    position: relative;
+    top: 30px;
+}
+
+
+/****** Dropdown Menu Styles ******/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    border: 0;
+    background-color: whitesmoke;
+    font-family:"Urbanist", sans-serif !important;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 5;
+}
+
+.dropdown-content a {
+    padding: 0px 26px;
+    margin: 20px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/****** Main Landing Page ******/
+h1 {
+    color: teal;
+    position: relative;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    font-weight: bold;
+}
+
+hr {
+    border-color: rgb(172, 172, 172);
+    margin: 2rem 1rem 1rem;
+    border-top: 0;
+}
+
+.main div {
+    display: inline-block;
+}
+
+.main {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/****** Block 1 Styles ******/
+.left-block {
+    width: 650px;
+    height: auto;
+    background-color: whitesmoke;
+    float: left;
+    margin: 75px 50px 0;
+}
+
+.left-block img {
+    float: left;
+    padding: 0 20px 10px;
+}
+
+.left-block section {
+    text-align: justify;
+    padding: 0px 20px 20px;
+    line-height: 23px;
+}
+
+.left-block h1 {
+    font-size: 35px;
+}
+
+/****** Block 2 Styles ******/
+.right-block {
+    width: 550px;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 75px 50px 0;
+    /*float: right;*/
+}
+
+table {
+    margin: 10px auto;
+}
+
+td {
+    padding: 10px;
+}
+
+.right-block img {
+    width: 200px;
+}
+
+.right-block img:hover {
+    border:2px solid purple;
+}
+
+.right-block h1 {
+    font-size: 30px;
+}
+
+@media (max-width: 500px) {
+    .right-block, .left-block {
+        display: inline;
+    }
+}
