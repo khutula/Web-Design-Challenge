@@ -241,14 +241,31 @@ thead {
     margin-left: 20px;
 }
 
-.data hr {    
-    height: 2px;     
-    background-color:rgb(172, 172, 172);         
-}
 
+@media (max-width: 600px) {
+    body {
+        width: auto;
+    }
+    
+    nav {
+        background-color: teal;
+    }
 
-@media (max-width: 500px) {
-    .right-block, .left-block {
-        display: inline;
+    nav div ul {
+        display: none;
+        color: whitesmoke;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .data .left-block {
+        margin: 0;
+        width: auto;
+    }
+
+    .data table {
+        border: .5px solid grey;
+        width: auto;
+        margin: 0 5px;
     }
 }
