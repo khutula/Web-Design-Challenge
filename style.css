@@ -17,7 +17,6 @@ nav {
 
 nav a, nav button {
     text-decoration: none;
-    color: teal;
 }
 
 nav .home, nav .main-opts, nav button {
@@ -26,7 +25,8 @@ nav .home, nav .main-opts, nav button {
 
 .dropbtn:hover, .main-opts:hover, .home:hover, .dropdown-content a:hover {
     background-color: purple;
-    color: whitesmoke;
+    color: whitesmoke !important;
+    text-decoration: none;
 }
 
 .home {
@@ -45,7 +45,11 @@ nav ul li {
     margin: 0 5px;
     padding: 10px;
     font-size: 15px;
-    top: 20px;
+    top: 25px;
+}
+
+.main-opts, .main-opts button {
+    color: teal !important;
 }
 
 nav ul {
@@ -54,7 +58,7 @@ nav ul {
 
 .btn {
     position: relative;
-    top: 30px;
+    top: 20px;
 }
 
 
@@ -70,7 +74,7 @@ nav ul {
     font-family:"Urbanist", sans-serif !important;
     font-size: 15px;
     margin-top: 0;
-    width: 175px;
+    width: 170px;
 }
 
 .dropdown-content {
@@ -83,6 +87,7 @@ nav ul {
 .dropdown-content a {
     padding: 0px 26px;
     margin: 20px 0;
+    color: teal !important;
 }
 
 .dropdown:hover .dropdown-content {
@@ -102,6 +107,8 @@ hr {
     border-color: rgb(172, 172, 172);
     margin: 2rem 1rem 1rem;
     border-top: 0;
+    height: 2px;     
+    background-color:rgb(172, 172, 172);
 }
 
 .main div {
@@ -218,6 +225,27 @@ td {
 .comparisons .main div {
     display: inline-table;
 }
+
+/****** Make adjustments to Styling for Data Page ******/
+.data .left-block {
+    float: none;
+    margin: 75px auto;
+    width: 1075px;
+}
+
+thead {
+    font-weight: bolder !important;
+}
+
+.data h1, .data p {
+    margin-left: 20px;
+}
+
+.data hr {    
+    height: 2px;     
+    background-color:rgb(172, 172, 172);         
+}
+
 
 @media (max-width: 500px) {
     .right-block, .left-block {
