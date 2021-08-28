@@ -116,7 +116,7 @@ hr {
 }
 
 .main {
-    width: 1400px;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -146,22 +146,20 @@ hr {
 
 /****** Block 2 Styles ******/
 .right-block {
-    width: 550px;
+    width: 425px;
     height: auto;
     background-color: whitesmoke;
     margin: 75px 50px 0;
-    /*float: right;*/
+    text-align: center;
 }
 
-table {
-    margin: 10px auto;
-}
-
-td {
-    padding: 10px;
+.viz-table {
+    margin: 10px auto; 
+    display: inline-block;
 }
 
 .right-block img {
+    padding: 10px;
     width: 200px;
 }
 
@@ -171,6 +169,7 @@ td {
 
 .right-block h1 {
     font-size: 30px;
+    text-align: left;
 }
 
 
@@ -241,12 +240,13 @@ thead {
     margin-left: 20px;
 }
 
-
-@media (max-width: 600px) {
+/****** Style Changes For Small Screen ******/
+@media screen and (max-width: 600px) {
     body {
-        width: auto;
+        background-color: whitesmoke;
     }
     
+    /****** NavBar Style Changes For Small Screen ******/
     nav {
         background-color: teal;
     }
@@ -258,6 +258,17 @@ thead {
         z-index: 5;
     }
 
+    /****** General Style Changes For Small Screen ******/
+    h1, p {
+        margin-left: 5px !important;
+
+    }
+
+    p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /****** Data Page Style Changes For Small Screen ******/
     .data .left-block {
         margin: 0;
         width: auto;
@@ -267,5 +278,32 @@ thead {
         border: .5px solid grey;
         width: auto;
         margin: 0 5px;
+    }
+
+    /****** Landing Page Style Changes For Small Screen ******/
+    .main {
+        width: auto;
+    }
+
+    .main .left-block {
+        margin:0;
+        width: auto;
+    }
+
+    .main .right-block {
+        margin:0;
+        width: 100%;
+    }
+
+    .main .right-block h1 {
+        font-size: 20px;
+    }
+
+    .main .right-block img {
+        width: 75px;
+    }
+
+    .viz-table {
+        margin: 0 auto; 
     }
 }
