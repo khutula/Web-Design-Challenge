@@ -10,28 +10,36 @@
     <title>Latitude: Cloudiness</title>
 </head>
 <body class="plot-pages">
-    <nav>
-        <a class="home" href="index.html"><i class="fas fa-home"></i>  Latitude</a>
-        <div>
-            <ul>
-                <li>
-                    <a class="main-opts btn" href="data.html"><i class="fas fa-table"></i>  Data</a>
-                </li>
-                <li>
-                    <a class="main-opts btn" href="comparisons.html"><i class="fas fa-columns"></i>  Comparisons</a>
-                </li>
-                <li class="dropdown">
-                    <button class="main-opts dropbtn">
-                        <i class="fas fa-chart-bar"></i>  Plots  <i class="fas fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="temp_plot.html">Max Temperature</a>
-                        <a href="humidity_plot.html">Humidity</a>
-                        <a href="cloudiness_plot.html">Cloudiness</a>
-                        <a href="wind_speed_plot.html">Wind Speed</a>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                
+                <div class="dropdown show">
+                    <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="nav-link"><i class="fas fa-chart-bar"></i>  Plots  <i class="fas fa-caret-down"></i></span>
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="temp_plot.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity_plot.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness_plot.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind_speed_plot.html">Wind Speed</a>
                     </div>
-                </li>
-            </ul>
+                  </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparisons.html"><i class="fas fa-columns"></i>  Comparisons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html"><i class="fas fa-table"></i>  Data</a>
+            </li>
+          </ul>
         </div>
     </nav>
     <div class="main">
@@ -54,5 +62,8 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

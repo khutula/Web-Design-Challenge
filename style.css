@@ -12,95 +12,75 @@ body {
 /****** NavBar Styles ******/
 nav {
     background-color: whitesmoke;
-    height: 75px;
 }
 
-nav a, nav button {
-    text-decoration: none;
-}
-
-nav .home, nav .main-opts, nav button {
+.navbar-brand {
+    font-size: 35px;
+    white-space: pre;
+    color: whitesmoke !important;
+    background-color: teal;
     padding: 10px;
+    border-radius: 5px;
 }
 
-.dropbtn:hover, .main-opts:hover, .home:hover, .dropdown-content a:hover {
+.nav-link {
+    color:teal !important;
+    padding-left: 10px !important;
+    white-space: pre;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.nav-link:hover, .dropdown-item:hover, .navbar-brand:hover {
     background-color: purple;
     color: whitesmoke !important;
-    text-decoration: none;
 }
 
-.home {
-    color: whitesmoke;
-    float: left;
+.navbar-toggler {
     background-color: teal;
-    font-size: 35px;
-    position: absolute;
-    left: 15px;
-    top: 19px;
 }
 
-nav ul li {
-    display: inline;
-    float: right;
-    margin: 0 5px;
-    padding: 10px;
-    font-size: 15px;
-    top: 25px;
+.dropdown-toggle:hover {
+    text-decoration:none;
 }
 
-.main-opts, .main-opts button {
-    color: teal !important;
+.dropdown-toggle:after {
+    content:none;
 }
 
-nav ul {
-    margin-right: 10px;
-}
-
-.btn {
-    position: relative;
-    top: 20px;
-}
-
-
-/****** Dropdown Menu Styles ******/
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    border: 0;
+.dropdown-menu {
     background-color: whitesmoke;
-    font-family:"Urbanist", sans-serif !important;
-    font-size: 15px;
-    margin-top: 0;
-    width: 170px;
 }
 
-.dropdown-content {
-    display: none;
-    background-color: whitesmoke;
-    position: absolute;
-    z-index: 5;
-}
-
-.dropdown-content a {
-    padding: 0px 26px;
-    margin: 20px 0;
-    color: teal !important;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown-item {
+    color: teal;
+    margin: 5px 0;
+    border-radius: 5px;
 }
 
 /****** Main Landing Page ******/
+.main div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main {
+    width: 1205px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
 h1 {
     color: teal;
     position: relative;
     padding-left: 1rem;
     padding-top: 3rem;
     font-weight: bold;
+    text-align: left;
 }
 
 hr {
@@ -111,22 +91,12 @@ hr {
     background-color:rgb(172, 172, 172);
 }
 
-.main div {
-    display: inline-block;
-}
-
-.main {
-    width: 1300px;
-    margin: 0 auto;
-}
-
 /****** Block 1 Styles ******/
 .left-block {
     width: 650px;
     height: auto;
     background-color: whitesmoke;
-    float: left;
-    margin: 75px 50px 0;
+    margin-right: 30px;
 }
 
 .left-block img {
@@ -149,7 +119,7 @@ hr {
     width: 425px;
     height: auto;
     background-color: whitesmoke;
-    margin: 75px 50px 0;
+    margin-left: 30px;
     text-align: center;
 }
 
@@ -183,7 +153,7 @@ hr {
     width: 900px;
 }
 
-.main {
+.plot-pages .main {
     width: 1650px;
     margin: 0 auto;
 }
@@ -196,12 +166,14 @@ hr {
 
 .comparisons .main {
     width: 1226px;
-    height: 1100px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .comparisons .left-block {
     width: auto;
     float: none;
+    margin: 0;
 }
 
 .plot-table img {
@@ -241,7 +213,7 @@ thead {
 }
 
 /****** Style Changes For Small Screen ******/
-@media screen and (max-width: 600px) {
+@media (max-width: 767.9px) {
     body {
         background-color: whitesmoke;
     }
@@ -251,12 +223,21 @@ thead {
         background-color: teal;
     }
 
-    nav div ul {
-        display: none;
-        color: whitesmoke;
-        position: absolute;
-        z-index: 5;
+    .nav-link {
+        color:whitesmoke !important;
+        padding-left: 10px !important;
     }
+
+    .dropdown-menu {
+        background-color: teal;
+        border: none;
+        margin: 0;
+    }
+
+    .dropdown-item {
+        color: whitesmoke;
+    }
+
 
     /****** General Style Changes For Small Screen ******/
     h1, p {
@@ -283,6 +264,7 @@ thead {
     /****** Landing Page Style Changes For Small Screen ******/
     .main {
         width: auto;
+        top: 0px;
     }
 
     .main .left-block {
@@ -300,7 +282,7 @@ thead {
     }
 
     .main .right-block img {
-        width: 75px;
+        width: 100px;
     }
 
     .main .left-block img {
@@ -329,10 +311,9 @@ thead {
         padding: 0;
     }
 
-    .plot-pages .left-block h1, .main .left-block h1 {
+    .plot-pages .left-block h1, .main .left-block h1, .data h1 {
         font-size: 25px;
         text-align: left;
     }
-
-    
 }
+
