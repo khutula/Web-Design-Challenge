@@ -170,14 +170,18 @@ hr {
     margin: 0 auto;
 }
 
+
 .comparisons .left-block {
     width: auto;
     float: none;
-    margin: 0;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 .plot-table img {
-    width: 500px;
+    width: 550px;
+    float: none;
+    padding: 0 20px 10px;
 }
 
 .plot-table img:hover {
@@ -193,9 +197,6 @@ hr {
     font-size: 25px;
 }
 
-.comparisons div {
-    display: inline-table;
-}
 
 /****** Make adjustments to Styling for Data Page ******/
 .data .left-block {
@@ -213,7 +214,7 @@ thead {
 }
 
 /****** Style Changes For Small Screen ******/
-@media (max-width: 767.9px) {
+@media (max-width: 767.98px) {
     body {
         background-color: whitesmoke;
     }
@@ -269,7 +270,6 @@ thead {
     .main {
         width: auto;
         top: 0px;
-        border: 1px solid red;
         margin: 0;
     }
 
@@ -317,7 +317,7 @@ thead {
         padding: 0;
     }
 
-    .plot-pages .left-block h1, .main .left-block h1, .data h1 {
+    .plot-pages .left-block h1, .main .left-block h1, .data h1, .comparisons .left-block h1 {
         font-size: 25px;
         text-align: left;
     }
@@ -330,10 +330,12 @@ thead {
     .comparisons {
         width: auto;
         margin: 0;
+        
     }
 
     .plot-table img {
-        width: 500px;
+        width: 100%;
     }
+    
 }
 
