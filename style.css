@@ -164,7 +164,7 @@ hr {
 
 /****** Make adjustments to Styling for Comparison Page ******/
 
-.comparisons .main {
+.comparisons {
     width: 1226px;
     height: auto;
     margin: 0 auto;
@@ -193,7 +193,7 @@ hr {
     font-size: 25px;
 }
 
-.comparisons .main div {
+.comparisons div {
     display: inline-table;
 }
 
@@ -221,6 +221,10 @@ thead {
     /****** NavBar Style Changes For Small Screen ******/
     nav {
         background-color: teal;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
     }
 
     .nav-link {
@@ -265,11 +269,13 @@ thead {
     .main {
         width: auto;
         top: 0px;
+        border: 1px solid red;
+        margin: 0;
     }
 
     .main .left-block {
         margin:0;
-        width: auto;
+        width: 100%;
     }
 
     .main .right-block {
@@ -314,6 +320,20 @@ thead {
     .plot-pages .left-block h1, .main .left-block h1, .data h1 {
         font-size: 25px;
         text-align: left;
+    }
+
+    .plot-pages .main {
+        width: auto;
+        margin: 0;
+    }
+
+    .comparisons {
+        width: auto;
+        margin: 0;
+    }
+
+    .plot-table img {
+        width: 500px;
     }
 }
 
