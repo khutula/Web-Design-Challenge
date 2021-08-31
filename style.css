@@ -333,6 +333,10 @@ thead {
         
     }
 
+    .comparisons .left-block {
+        margin-top:0;
+    }
+
     .plot-table img {
         width: 100%;
     }
