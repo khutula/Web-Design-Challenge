@@ -1,4 +1,4 @@
-# GT Bootcamp Web Design Homework: Latitude
+# [GT Bootcamp Web Design Homework: Latitude](https://khutula.github.io/Web-Design-Challenge)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -8,7 +8,7 @@
 
 <a name="introduction"></a>
 ### Introduction
-In this assignment, I have been tasked with creating a responsive website that shows off analysis from a preivous project. I elected to use the provided images/dataset for this assignment.
+In this assignment, I have been tasked with creating a [responsive website](https://khutula.github.io/Web-Design-Challenge) that shows off analysis from a preivous project. I elected to use the provided images/dataset for this assignment.
 
 <a name="objectives"></a>
 ### Objectives
